@@ -1,0 +1,94 @@
+:root {
+  --primary01: #13183f;
+  --primary02: #666ca3;
+  --primary03: #83869a;
+  --accent01: #f74780;
+  --accent02: #ffa7c3;
+  --grad01: #f02aa6;
+  --grad02: #ff6f48;
+  --grad03: #4851ff;
+  --lightest: #ffffff;
+}
+
+body {
+  margin: 0;
+  color: var(--primary03);
+  overflow: clip;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--primary01);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta {
+  h1 {
+    max-width: 15ch;
+  }
+  p {
+    max-width: 33ch;
+  }
+}
+
+main {
+  position: relative;
+  max-width: 70rem;
+  margin: auto;
+}
+
+button {
+  border: none;
+  background-color: var(--primary01);
+  color: var(--lightest);
+  font-size: var(--text-md);
+  font-weight: var(--fw-bold);
+  padding: 1.25rem 2rem;
+  align-self: center;
+  letter-spacing: 1.025px;
+  border-radius: 50px;
+
+  &:hover {
+    background-color: var(--primary02);
+    cursor: pointer;
+  }
+}
+
+.img-anchor {
+  position: absolute;
+  right: -31rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  & > *:not(.footer-bg) {
+    position: relative;
+    z-index: 1;
+  }
+  h2 {
+    color: var(--lightest);
+  }
+  button {
+    background: linear-gradient(var(--grad03), var(--grad01));
+    &:hover {
+      box-shadow: inset 0 0px 50px 20px hsl(0 0% 100% / 0.651);
+      cursor: pointer;
+    }
+  }
+  .footer-bg {
+    position: absolute;
+    background-color: var(--primary01);
+    width: 400%;
+    left: -200%;
+    height: 100%;
+  }
+}

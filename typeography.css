@@ -1,0 +1,60 @@
+:root {
+--heading-xl: 3.5rem;
+--heading-xl-line: 4.375rem;
+
+--heading-lg: 2.5rem;
+--heading-lg-line: 4.375rem;
+
+--heading-md: 2rem;
+--heading-md-line: 2.5rem;
+
+--heading-sm: 1.5rem;
+--heading-sm-line: 1.75rem;
+
+--fw-medium: 500;
+--fw-bold: 600;
+--fw-extra-bold: 800;
+
+--body-line: 1.75rem;
+--text-sm: 1rem;
+--text-md: 1.125rem;
+}
+
+@font-face {
+/* Declare it as a font-family */
+font-family: "Plus Jakarta Sans";
+src: url(./assets/fonts/PlusJakartaSans-VariableFont-wght.ttf);
+}
+
+body {
+/* using the new Work Sans font family */
+font-family: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+line-height: var(--body-line);
+font-size: var(--text-md);
+font-weight: var(--fw-medium);
+}
+
+h1 {
+font-size: var(--heading-xl);
+line-height: var(--heading-xl-line);
+}
+
+h2 {
+  font-size: var(--heading-lg);
+  line-height: var(--heading-lg-line);
+}
+
+h3 {
+  font-size: var(--heading-md);
+  line-height: var(--heading-md-line);
+}
+
+h4 {
+  font-size: var(--heading-sm);
+  line-height: var(--heading-sm-line);
+}
+
+h1, h2, h3, h4 {
+font-weight: var(--fw-extra-bold);
+}
+
