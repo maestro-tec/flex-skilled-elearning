@@ -162,7 +162,6 @@ footer {
 @media only screen and (width < 640px) {
   body {
     padding: 0 1.75rem;
-    width: 100%;
   }
   .cta h1 {
     font-size: var(--heading-md);
