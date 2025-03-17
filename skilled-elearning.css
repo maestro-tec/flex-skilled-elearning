@@ -175,4 +175,13 @@ footer {
     }
     box-shadow: none;
   }
+  .img-anchor {
+     /* TODO: add responsive images */
+    display: none;
+  }
+
+  footer .footer-bg {
+    width: 100vw;
+    left: -2rem;
+}
 }
