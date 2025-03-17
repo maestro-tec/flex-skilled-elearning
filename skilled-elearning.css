@@ -111,9 +111,9 @@ button {
   }
 
   img {
-    max-width: 6rem;
+    width: 4rem;
     position: absolute;
-    top: -1.5rem;
+    top: -2rem;
   }
 }
 
@@ -156,6 +156,12 @@ footer {
     width: 400%;
     left: -200%;
     height: 100%;
+  }
+}
+
+@media (width < 1024px) {
+ .cards {
+  gap: 5rem 1rem;
   }
 }
 
