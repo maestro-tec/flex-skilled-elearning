@@ -38,7 +38,7 @@ header {
     max-width: 15ch;
   }
   p {
-    max-width: 33ch;
+    max-width: 35ch;
   }
   button {
     background: linear-gradient(var(--grad02), var(--grad01));
@@ -111,9 +111,9 @@ button {
   }
 
   img {
-    width: 4rem;
+    width: 4.25rem;
     position: absolute;
-    top: -2rem;
+    top: -2.125rem;
   }
 }
 
@@ -124,7 +124,7 @@ button {
   }
 }
 
-.img-anchor {
+picture {
   position: absolute;
   right: -31rem;
   top: -10rem;
@@ -160,34 +160,54 @@ footer {
 }
 
 @media (width < 1024px) {
- .cards {
-  gap: 5rem 1rem;
+  .cards {
+    gap: 5rem 1rem;
+  }
+
+  picture {
+    top: -50px;
+    right: -20rem;
+  }
+
+  .hero {
+    min-height: 35rem;
+  }
+
+  .cta {
+    font-size: var(--text-sm);
   }
 }
 
-@media only screen and (width < 640px) {
+@media only screen and (width < 768px) {
   body {
     padding: 0 1.75rem;
   }
-  .cta h1 {
-    font-size: var(--heading-md);
-    line-height: var(--heading-md-line);
-  }
+
   .card {
     padding: 2rem;
     h3 {
-    font-size: var(--heading-sm);
-    line-height: var(--heading-sm-line);
+      font-size: var(--heading-sm);
+      line-height: var(--heading-sm-line);
     }
     box-shadow: none;
   }
-  .img-anchor {
-     /* TODO: add responsive images */
-    display: none;
+
+  picture {
+    position: relative;
+    top: 0;
+    left: -3.5rem;
+    left: 0;
+    img {
+      width: 100%;
+    }
+  }
+
+  .hero {
+    min-height: 24rem;
   }
 
   footer .footer-bg {
     width: 100vw;
     left: -2rem;
-}
+  }
 }
