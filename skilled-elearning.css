@@ -8,6 +8,8 @@
   --grad02: #ff6f48;
   --grad03: #4851ff;
   --lightest: #ffffff;
+
+  --shoulder: 3rem;
 }
 
 body {
@@ -18,7 +20,7 @@ body {
     var(--lightest) 50%,
     rgb(from var(--grad03) r g b / 10%)
   );
-  padding: 0 3rem;
+  padding: 0 var(--shoulder);
 }
 
 h1,
@@ -150,11 +152,12 @@ footer {
       cursor: pointer;
     }
   }
+
   .footer-bg {
     position: absolute;
     background-color: var(--primary01);
-    width: 400%;
-    left: -200%;
+    width: 100vw;
+    left: calc(-1 * var(--shoulder));
     height: 100%;
   }
 }
@@ -179,8 +182,10 @@ footer {
 }
 
 @media only screen and (width < 768px) {
+
   body {
-    padding: 0 1.75rem;
+    --shoulder: 1.75rem;
+    padding: 0 var(--shoulder);
   }
 
   .card {
@@ -204,10 +209,5 @@ footer {
 
   .hero {
     min-height: 24rem;
-  }
-
-  footer .footer-bg {
-    width: 100vw;
-    left: -2rem;
   }
 }
