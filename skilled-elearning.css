@@ -156,11 +156,13 @@ footer {
   .footer-bg {
     position: absolute;
     background-color: var(--primary01);
-    width: 100vw;
-    left: calc(-1 * var(--shoulder));
     height: 100%;
+    width: 300%;
+    left: -100%;
   }
+
 }
+
 
 @media (width < 1024px) {
   .cards {
@@ -178,6 +180,11 @@ footer {
 
   .cta {
     font-size: var(--text-sm);
+  }
+
+  .footer-bg {
+    width: 100vw;
+    left: calc(-1 * var(--shoulder));
   }
 }
 
