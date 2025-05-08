@@ -4,7 +4,7 @@
 
 ## Skills
 
-This project showcases a responsive flexbox layout. It also uses repsonsive images, minimal CSS with custom CSS properties and relative colors, as well as semantic HTML. 
+This project showcases a responsive flexbox layout. It also uses responsive images, minimal CSS with custom CSS properties and relative colors, as well as semantic HTML. 
 
 ## Instructions 
 
